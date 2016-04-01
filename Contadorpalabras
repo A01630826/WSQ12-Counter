@@ -1,0 +1,12 @@
+#Contador de palabras
+
+def contador(p):
+    return text.count(p) #cuenta las veces que aparece la palabra(p) en el texto
+
+palabra = input("Ingrese la palabra a buscar: ").lower() #lo convierte en minusculas
+texto=input("Cuál es el nombre del archivo?: ")
+
+with open(texto, "rt") as Txt:
+    text = Txt.read().lower() #abre el archivo y convierte todo en minusculas
+
+print ("la palabra", palabra, "se repite estas veces: ",(contador(palabra)))
